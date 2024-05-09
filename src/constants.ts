@@ -18,6 +18,5 @@ export const BOOST = {
 // points won't be counted for these addresses
 export const ADDRESSES_EXCLUDED = [
     ZERO_ADDR,
-    CAMELOT_NFP_MANAGER, // Camelot: NFT Position Manager
     CAMELOT_ALGEBRA_POOL, // Camelot: ezEth/Eth Algebra Pool
 ]
