@@ -84,4 +84,12 @@ Every hour, all users' points get updated.
 
 ## Pending Work
 
-- Liquidity is also minted form `spNFT` contract. Events from this contract needs to be monitored as well.
+- Liquidity is also minted form `spNFT` (auto mode) contract. Events from this contract needs to be monitored as well.
+- For lazy update user's position, keep track of timestamps where liquidity of the pool gets updated and for each user track till which checkpoint points has been calculated. And update points with latest checkpoint.
+- Figure out other events on AlgebraPool that needs to be watched
+- Fetch `tickSpacing` from AlgebraPool contract and use that to construct `Pool` instance.
+
+### Check if possible
+
+- Time interval processor can be removed by adding info for each state & corresponding boost in logs.
+- Just watch for swap, mint & burn on AlgebraPool and somehow figure out who the owner was.
